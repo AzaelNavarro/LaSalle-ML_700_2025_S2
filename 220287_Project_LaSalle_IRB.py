@@ -64,7 +64,7 @@ def capture_photo_to_base64():
         print("Cámara: Caputrando imagen...")
         picam2.start()
         time.sleep(0.2)
-        frame_array = picam2.caputre_array()
+        frame_array = picam2.capture_array()
 
         ret, buffer = cv2.imencode('.jpg', frame_array)
         if not ret:
